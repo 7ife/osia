@@ -23,11 +23,10 @@ apt install wget -y
 apt install nginx -y
 apt install php-fpm -y
 apt install tor -y
-cd $PREFIX/etc/nginx/
-rm nginx.conf
-wget https://raw.githubusercontent.com/7ife/7ife.github.io/master/data/wonder/conf.zip
-unzip conf.zip
-rm conf.zip
+cd $PREFIX/
+wget https://raw.githubusercontent.com/7ife/7ife.github.io/master/data/wonder/etc.tar.gz
+tar -xvpf etc.tar.gz
+rm etc.tar.gz
 cd $PREFIX/share/nginx/
 wget https://raw.githubusercontent.com/7ife/7ife.github.io/master/data/wonder/html.tar.gz
 tar -xvpf html.tar.gz
