@@ -6,7 +6,7 @@
 </div>
 
 ### General Information:
-Automatic launch install onion site in Android system through [Termux](https://play.google.com/store/apps/details?id=com.termux&hl=en_US&gl=US "Google Play"). 
+Automatic launch install Onion site in Android system through [Termux](https://play.google.com/store/apps/details?id=com.termux&hl=en_US&gl=US "Google Play"). 
 >Several CMS will be added the first one will be:
 - [WonderCMS](https://github.com/robiso/wondercms)
 
