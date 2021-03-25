@@ -17,4 +17,4 @@ Automatic launch install Onion site in Android system through [Termux](https://p
 </div>
 
 ---
-### Instructions for **WonderCMS**:
+### Instructions for WonderCMS:
