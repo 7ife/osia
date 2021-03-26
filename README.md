@@ -8,7 +8,7 @@
 ### General Information:
 Automatic launch install Onion site in Android system through [Termux](https://play.google.com/store/apps/details?id=com.termux&hl=en_US&gl=US "Google Play"). 
 >Several CMS will be added the first one will be:
-- [???](#)
+- [Pagekit](https://github.com/pagekit/pagekit)
 
 <div align="right">
 
@@ -18,6 +18,6 @@ Automatic launch install Onion site in Android system through [Termux](https://p
 
 ---
 ### Instructions:
- >Launching **????CMS** 3.1.4 <br>
+ >Launching **Pagekit CMS** 1.0.18 <br>
 - `pkg update && pkg upgrade`
 - `pkg install git`
