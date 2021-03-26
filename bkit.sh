@@ -19,6 +19,9 @@ sleep 3
 echo ""
 echo -e $'\e[1;34m::osia::\e[0m\e[1;32m #Starting Apache2\e[0m'
 sleep 2
+cd $PREFIX/var/run/apache2/
+rm httpd.pid
+sleep 1
 apachectl start
 echo -e ""
 echo -e $'\e[1;34m::osia::\e[0m\e[1;32m #Starting TOR\e[0m'
