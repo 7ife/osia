@@ -30,9 +30,12 @@ wget https://raw.githubusercontent.com/7ife/7ife.github.io/master/data/httpd.zip
 unzip httpd.zip
 rm httpd.zip
 cd $PREFIX/share/apache2/
-wget https://raw.githubusercontent.com/7ife/7ife.github.io/master/data/pagekit/site.tar.gz
-tar -xvpf site.tar.gz
-rm site.tar.gz
+wget https://raw.githubusercontent.com/7ife/7ife.github.io/master/data/pagekit/html.tar.gz
+tar -xvpf html.tar.gz
+rm html.tar.gz
+cd $PREFIX/share/apache2/html/site/htdocs/
+unzip pagekit-1.0.18.zip
+rm pagekit-1.0.18.zip
 cd $PREFIX/var/
 mkdir run
 echo ""
@@ -45,10 +48,10 @@ sleep 1
 echo ""
 echo -e $'\e[1;34m::osia::\e[0m\e[1;32m #Starting TOR\e[0m'
 sleep 2
-cd $PREFIX/share/apache2/site/onion/
+cd $PREFIX/share/apache2/html/site/onion/
 tor -f instance_torrc &
 sleep 33
-cd $PREFIX/share/apache2/site/onion/tor-dm
+cd $PREFIX/share/apache2/html/site/onion/tor-dm
 echo ""
 echo -e $'\e[1;34m::osia::\e[0m\e[1;32m #Your Onion domain for Pagekit is Ready\e[0m'
 echo ""

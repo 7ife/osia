@@ -17,12 +17,12 @@ echo ""
 echo -e ""
 echo -e $'\e[1;34m::osia::\e[0m\e[1;32m #Starting TOR\e[0m'
 sleep 2
-cd $PREFIX/share/apache2/site/onion/
+cd $PREFIX/share/apache2/html/site/onion/
 rm -R tor-data
 sleep 1
 tor -f instance_torrc &
 sleep 33
-cd $$PREFIX/share/apache2/site/onion/tor-dm
+cd $$PREFIX/share/apache2/html/site/onion/tor-dm
 echo ""
 echo -e $'\e[1;34m::osia::\e[0m\e[1;32m #Your Onion domain for Pagekit is Ready\e[0m'
 echo ""
