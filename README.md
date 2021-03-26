@@ -34,3 +34,6 @@ if you closed the tor, then to start it: <br>
 - `cd $HOME/osia`
 - `bash bkit.sh`
 
+---
+
+[Top](#top "Back to top")
