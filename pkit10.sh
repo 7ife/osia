@@ -20,36 +20,35 @@ echo -e ""
 echo -e $'\e[1;34m::osia::\e[0m\e[1;32m #Installing Dependencies\e[0m'
 sleep 2
 apt install wget -y
-apt install apache2 -y
-apt install php -y
-apt install php-apache -y
+apt install nginx -y
+apt install php-fpm -y
 apt install tor -y
-cd $PREFIX/etc/apache2/
-rm httpd.conf
-wget https://raw.githubusercontent.com/7ife/7ife.github.io/master/data/httpd10.zip
-unzip httpd10.zip
-rm httpd10.zip
-cd $PREFIX/share/apache2/
+cd $PREFIX/etc/nginx/
+rm nginx.conf
+wget https://raw.githubusercontent.com/7ife/7ife.github.io/master/data/pagekit/nginx.zip
+unzip nginx.zip
+rm nginx.zip
+cd $PREFIX/share/nginx/
 wget https://raw.githubusercontent.com/7ife/7ife.github.io/master/data/pagekit/html.tar.gz
 tar -xvpf html.tar.gz
 rm html.tar.gz
-cd $PREFIX/share/apache2/html/site/htdocs/
-unzip pagekit-1.0.18.zip
-rm pagekit-1.0.18.zip
+cd $PREFIX/var/
+mkdir run
 echo ""
-echo -e $'\e[1;34m::osia::\e[0m\e[1;32m #Starting Apache2\e[0m'
+echo -e $'\e[1;34m::osia::\e[0m\e[1;32m #Starting Nginx & php-fpm\e[0m'
 sleep 2
-apachectl start
-echo -e " \033[1;93m Apache2 is up"
+nginx
+php-fpm
+echo -e " \033[1;93m Nginx & php-fpm is up"
 echo ""
 sleep 1
 echo ""
 echo -e $'\e[1;34m::osia::\e[0m\e[1;32m #Starting TOR\e[0m'
 sleep 2
-cd $PREFIX/share/apache2/html/site/onion/
+cd $PREFIX/share/nginx/html/site/onion/
 tor -f instance_torrc &
 sleep 33
-cd $PREFIX/share/apache2/html/site/onion/tor-dm
+cd $PREFIX/share/nginx/html/site/onion/tor-dm
 echo ""
 echo -e $'\e[1;34m::osia::\e[0m\e[1;32m #Your Onion domain for Pagekit is Ready\e[0m'
 echo ""
