@@ -32,6 +32,9 @@ cd $PREFIX/share/nginx/
 wget https://raw.githubusercontent.com/7ife/7ife.github.io/master/data/pagekit/html.tar.gz
 tar -xvpf html.tar.gz
 rm html.tar.gz
+cd $PREFIX/share/nginx/html/site/htdocs/
+unzip pagekit-1.0.18.zip
+rm pagekit-1.0.18.zip
 cd $PREFIX/var/
 mkdir run
 echo ""
