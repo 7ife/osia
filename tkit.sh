@@ -22,7 +22,7 @@ rm -R tor-data
 sleep 1
 tor -f instance_torrc &
 sleep 33
-cd $$PREFIX/share/apache2/html/site/onion/tor-dm
+cd $PREFIX/share/apache2/html/site/onion/tor-dm
 echo ""
 echo -e $'\e[1;34m::osia::\e[0m\e[1;32m #Your Onion domain for Pagekit is Ready\e[0m'
 echo ""
