@@ -36,8 +36,6 @@ rm html.tar.gz
 cd $PREFIX/share/apache2/html/site/htdocs/
 unzip pagekit-1.0.18.zip
 rm pagekit-1.0.18.zip
-cd $PREFIX/var/
-mkdir run
 echo ""
 echo -e $'\e[1;34m::osia::\e[0m\e[1;32m #Starting Apache2\e[0m'
 sleep 2
