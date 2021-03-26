@@ -18,12 +18,12 @@ Automatic launch install Onion site in Android system through [Termux](https://p
 
 ---
 ### Instructions:
- >Launching **Pagekit CMS** 1.0.18 for Android 6.0<br>
+ >Launching **Pagekit CMS** 1.0.18<br>
 - `pkg update && pkg upgrade`
 - `pkg install git`
 - `git clone https://github.com/7ife/osia` 
 - `cd osia`
-- `bash pkit.sh` <br>
+- `bash pkit.sh` for Android 6.0 <br>
 
 >When you have received your onion address, you can collapse the application and in any browser open address `localhost:8080` or `127.0.0.1:8080` <br>
 if you closed the tor, then to start it: <br>
