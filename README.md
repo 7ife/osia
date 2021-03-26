@@ -18,7 +18,7 @@ Automatic launch install Onion site in Android system through [Termux](https://p
 
 ---
 ### Instructions:
- >Launching **Pagekit CMS** 1.0.18 <br>
+ >Launching **Pagekit CMS** 1.0.18 for Android 6.0<br>
 - `pkg update && pkg upgrade`
 - `pkg install git`
 - `git clone https://github.com/7ife/osia` 
